@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .label {
+        @apply block text-gray-900;
+    }
+    .input {
+        @apply form-input w-full px-2 py-1 rounded-sm text-black;
+    }
+
+    .filter-input-l {
+        @apply placeholder:text-gray-500 px-2 py-1 text-gray-900 w-24 rounded-t-md rounded-b-md rounded-l-md rounded-r-none border-gray-400;
+    }
+    .filter-input-r {
+        @apply placeholder:text-gray-500 px-2 py-1 text-gray-900 w-24 rounded-t-md rounded-b-md rounded-r-md rounded-l-none border-gray-400;
+    }
+    .btn-primary {
+        @apply px-2 py-1 bg-indigo-700 text-white rounded text-end hover:bg-indigo-600;
+    }
+    .btn-secondary {
+        @apply px-2 py-1 bg-gray-700 text-white rounded text-end hover:bg-gray-500;
+    }
+    .btn-outline {
+        @apply px-2 py-1 rounded-md border border-gray-900 hover:bg-gray-200;
+    }
+}
